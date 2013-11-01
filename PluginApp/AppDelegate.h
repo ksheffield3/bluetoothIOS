@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+
+
+
 
 @property (strong, nonatomic) UIWindow *window;
 
++(float)FooPluginFunction;
+-(void)startSearching;
 @end

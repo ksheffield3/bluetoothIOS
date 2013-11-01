@@ -21,6 +21,12 @@
 		CD2B725A181EC2CC00D9A884 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2B723C181EC2CB00D9A884 /* UIKit.framework */; };
 		CD2B7262181EC2CC00D9A884 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD2B7260181EC2CC00D9A884 /* InfoPlist.strings */; };
 		CD2B7264181EC2CC00D9A884 /* PluginAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2B7263181EC2CC00D9A884 /* PluginAppTests.m */; };
+		CD6A364D18203AA600585505 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A364C18203AA600585505 /* CoreBluetooth.framework */; };
+		CD6A36501820431600585505 /* PeriphScan.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6A364F1820431600585505 /* PeriphScan.m */; };
+		CD6AB9EA1821B70500440CE3 /* AdvertiseDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6AB9E91821B70500440CE3 /* AdvertiseDeviceViewController.m */; };
+		CD6AB9F01822CAB700440CE3 /* CBUUID+StringExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6AB9EF1822CAB700440CE3 /* CBUUID+StringExtraction.m */; };
+		CD6AB9F31822F6B900440CE3 /* CentralScan.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6AB9F21822F6B900440CE3 /* CentralScan.m */; };
+		CD6AB9F61823060100440CE3 /* CentralScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6AB9F51823060100440CE3 /* CentralScanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,17 @@
 		CD2B725F181EC2CC00D9A884 /* PluginAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluginAppTests-Info.plist"; sourceTree = "<group>"; };
 		CD2B7261181EC2CC00D9A884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD2B7263181EC2CC00D9A884 /* PluginAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginAppTests.m; sourceTree = "<group>"; };
+		CD6A364C18203AA600585505 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CD6A364E1820431600585505 /* PeriphScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeriphScan.h; sourceTree = "<group>"; };
+		CD6A364F1820431600585505 /* PeriphScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriphScan.m; sourceTree = "<group>"; };
+		CD6AB9E81821B70500440CE3 /* AdvertiseDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseDeviceViewController.h; sourceTree = "<group>"; };
+		CD6AB9E91821B70500440CE3 /* AdvertiseDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseDeviceViewController.m; sourceTree = "<group>"; };
+		CD6AB9EE1822CAB700440CE3 /* CBUUID+StringExtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+StringExtraction.h"; sourceTree = "<group>"; };
+		CD6AB9EF1822CAB700440CE3 /* CBUUID+StringExtraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+StringExtraction.m"; sourceTree = "<group>"; };
+		CD6AB9F11822F6B900440CE3 /* CentralScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentralScan.h; sourceTree = "<group>"; };
+		CD6AB9F21822F6B900440CE3 /* CentralScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralScan.m; sourceTree = "<group>"; };
+		CD6AB9F41823060100440CE3 /* CentralScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentralScanViewController.h; sourceTree = "<group>"; };
+		CD6AB9F51823060100440CE3 /* CentralScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralScanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6A364D18203AA600585505 /* CoreBluetooth.framework in Frameworks */,
 				CD2B723B181EC2CB00D9A884 /* CoreGraphics.framework in Frameworks */,
 				CD2B723D181EC2CB00D9A884 /* UIKit.framework in Frameworks */,
 				CD2B7239181EC2CB00D9A884 /* Foundation.framework in Frameworks */,
@@ -101,6 +119,7 @@
 		CD2B7237181EC2CB00D9A884 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD6A364C18203AA600585505 /* CoreBluetooth.framework */,
 				CD2B7238181EC2CB00D9A884 /* Foundation.framework */,
 				CD2B723A181EC2CB00D9A884 /* CoreGraphics.framework */,
 				CD2B723C181EC2CB00D9A884 /* UIKit.framework */,
@@ -115,6 +134,16 @@
 				CD2B7247181EC2CB00D9A884 /* AppDelegate.h */,
 				CD2B7248181EC2CB00D9A884 /* AppDelegate.m */,
 				CD2B724A181EC2CB00D9A884 /* Main.storyboard */,
+				CD6AB9F11822F6B900440CE3 /* CentralScan.h */,
+				CD6AB9F21822F6B900440CE3 /* CentralScan.m */,
+				CD6AB9F41823060100440CE3 /* CentralScanViewController.h */,
+				CD6AB9F51823060100440CE3 /* CentralScanViewController.m */,
+				CD6AB9E81821B70500440CE3 /* AdvertiseDeviceViewController.h */,
+				CD6AB9E91821B70500440CE3 /* AdvertiseDeviceViewController.m */,
+				CD6AB9EE1822CAB700440CE3 /* CBUUID+StringExtraction.h */,
+				CD6AB9EF1822CAB700440CE3 /* CBUUID+StringExtraction.m */,
+				CD6A364E1820431600585505 /* PeriphScan.h */,
+				CD6A364F1820431600585505 /* PeriphScan.m */,
 				CD2B724D181EC2CB00D9A884 /* ViewController.h */,
 				CD2B724E181EC2CB00D9A884 /* ViewController.m */,
 				CD2B7250181EC2CB00D9A884 /* Images.xcassets */,
@@ -249,9 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6A36501820431600585505 /* PeriphScan.m in Sources */,
 				CD2B724F181EC2CB00D9A884 /* ViewController.m in Sources */,
 				CD2B7249181EC2CB00D9A884 /* AppDelegate.m in Sources */,
+				CD6AB9F61823060100440CE3 /* CentralScanViewController.m in Sources */,
+				CD6AB9F01822CAB700440CE3 /* CBUUID+StringExtraction.m in Sources */,
 				CD2B7245181EC2CB00D9A884 /* main.m in Sources */,
+				CD6AB9F31822F6B900440CE3 /* CentralScan.m in Sources */,
+				CD6AB9EA1821B70500440CE3 /* AdvertiseDeviceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +494,7 @@
 				CD2B7269181EC2CC00D9A884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD2B726A181EC2CC00D9A884 /* Build configuration list for PBXNativeTarget "PluginAppTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +503,7 @@
 				CD2B726C181EC2CC00D9A884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

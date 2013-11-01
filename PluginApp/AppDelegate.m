@@ -7,13 +7,54 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreBluetooth/CoreBluetooth.h>
+#import <CoreBluetooth/CBService.h>
+#import "PeriphScan.h"
+#import "ViewController.h"
+
+
+
+@interface AppDelegate () <CBPeripheralDelegate>
+
+@property (nonatomic, strong) PeriphScan *peripheral;
+@property (nonatomic, strong) ViewController *viewer;
+
+
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+   /*
+    self.peripheral = [[PeriphScan alloc] initWithDelegate:self];
+    self.peripheral.serviceName = @"Test";
+    self.peripheral.serviceUUID = [CBUUID UUIDWithString:@"7e57"];
+    self.peripheral.characteristicUUID = [CBUUID UUIDWithString:@"b71e"];
+    [self.peripheral startAdvertising];
+  */
+    /*
+    self.viewer = [[ViewController alloc] init];
+    
+    if([self.viewer isReady]==YES)
+    {
+        [self.peripheral startAdvertising];
+        
+    }
+    */
     return YES;
+}
+
+-(void)startSearching
+{
+    self.peripheral = [[PeriphScan alloc] initWithDelegate:self];
+    self.peripheral.serviceName = @"Test";
+    self.peripheral.serviceUUID = [CBUUID UUIDWithString:@"7e57"];
+    self.peripheral.characteristicUUID = [CBUUID UUIDWithString:@"b71e"];
+    [self.peripheral startAdvertising];
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -42,5 +83,14 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
++ (float)FooPluginFunction
+{
+    return 5.0F;
+}
+
+
+
+
 
 @end
